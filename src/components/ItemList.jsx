@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SingleItem from "./SingleItem";
 
 const ItemList = ({ title, items, itemsArray, path, idPath }) => {
@@ -5,9 +6,9 @@ const ItemList = ({ title, items, itemsArray, path, idPath }) => {
     <div className="item-list">
       <div className="item-list__header">
         <h2>{title} Populares</h2>
-        <a href={path} className="item-list__link">
+        <Link to={path} className="item-list__link">
           Mostrar Tudo
-        </a>
+        </Link>
       </div>
 
       <div className="item-list__container">
