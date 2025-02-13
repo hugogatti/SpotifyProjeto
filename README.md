@@ -32,7 +32,7 @@ Este projeto é uma recriação do Spotify utilizando tecnologias modernas para 
    ```
 2. Acesse a pasta do projeto:
    ```sh
-   cd spotify-clone
+   cd SpotifyProjeto
    ```
 3. Instale as dependências:
    ```sh
