@@ -42,10 +42,7 @@ Este projeto é uma recriação do Spotify utilizando tecnologias modernas para 
    ```sh
    npm run dev
    ```
-5. Acesse no navegador:
-   ```
-http://localhost:5173
-   ```
+5. Acesse no navegador
 
 ## 📌 Funcionalidades
 - 🎵 Interface inspirada no Spotify
