@@ -23,6 +23,10 @@ export default [
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
+    extends: {
+      eslint:'recommended', 
+      plugin:react/'recommended'
+    },
     rules: {
       'no-unused-vars': 'off',
       'react/prop-types': 'off',
