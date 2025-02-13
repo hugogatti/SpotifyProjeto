@@ -1,6 +1,6 @@
 # 🎵 Spotify Clone
 
-Este projeto é uma recriação do Spotify utilizando tecnologias modernas para web. O objetivo é praticar e aprimorar habilidades em desenvolvimento front-end com React.
+Este projeto é uma recriação do Spotify utilizando tecnologias modernas para web. O objetivo é praticar e aprimorar habilidades em desenvolvimento front-end e back-end.
 
 ## 🚀 Tecnologias Utilizadas
 - **Vite + React**: Para um ambiente de desenvolvimento rápido e eficiente.
