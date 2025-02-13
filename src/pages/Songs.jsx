@@ -1,9 +1,8 @@
-const Songs = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+import React from "react";
+import Main from "../components/Main";
 
-export default Songs
+const Songs = () => {
+  return <Main type="songs" />;
+};
+
+export default Songs;
