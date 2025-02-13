@@ -1720,22 +1720,3 @@ export const songsArray = [
     id: 200,
   },
 ];
-
-export const songsIndexedByArtist = songsArray.reduce((acc, currentSong) => {
-  const artist = currentSong.artist;
-  if (artist in acc) {
-    acc[artist].push(currentSong);
-  } else {
-    acc[artist] = [currentSong];
-  }
-  return acc;
-}, {});
-
-export const songsIndexedById = songsArray.reduce((acc, currentSong) => {
-  const { _id } = currentSong;
-
-  acc[_id] = currentSong;
-  return acc;
-}, {});
-
-console.log(songsIndexedById);
