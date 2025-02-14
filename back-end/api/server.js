@@ -1,7 +1,6 @@
 //API
 import express from "express";
-import { artistArray } from "../../front-end/src/assets/database/artists.js";
-import { songsArray } from "../../front-end/src/assets/database/songs.js";
+import { db } from "./connect.js";
 
 const app = express();
 const PORT = 3001;
@@ -12,14 +11,18 @@ app.get("/", (req, res) => {
   res.send("Endpoint '/artists' e 'songs' disponíveis");
 });
 
-//Quando acessar a rota /artists, o servidor vai responder com o array de artistas
-app.get("/artists", (req, res) => {
-  res.send(artistArray);
+/*
+Acessar a coleção de músicas e artistas
+Assincrono - await espera a resposta do servidor e async para continuar
+Quando acessar a rota /artists, o servidor vai responder com o array de artistas 
+*/
+app.get("/artists", async (req, res) => {
+  res.send(await db.collection("artists").find({}).toArray());
 });
 
 //Quando acessar a rota /songs, o servidor vai responder com o array de músicas
-app.get("/songs", (req, res) => {
-  res.send(songsArray);
+app.get("/songs", async (req, res) => {
+  res.send(await db.collection("songs").find({}).toArray());
 });
 
 app.listen(3001, () => {
