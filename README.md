@@ -38,18 +38,41 @@ Este projeto é uma recriação do Spotify utilizando tecnologias modernas para 
    git clone https://github.com/hugogatti/SpotifyProjeto.git
    ```
 2. Acesse a pasta do projeto:
+
    ```sh
    cd SpotifyProjeto
    ```
-3. Instale as dependências:
+
+3. Para o Back-end:
+   ```sh
+   cd back-end
+   ```
+4. inicialize o back:
+
+   ```sh
+   npm init --y
+   ```
+
+5. inicialize o servidor:
+   ```sh
+   node .\api\server.js
+   ```
+
+---
+
+6. Para o Front-end:
+   ```sh
+   cd front-end
+   ```
+7. Instale as dependências para o front:
    ```sh
    npm install
    ```
-4. Inicie o servidor de desenvolvimento:
+8. Inicie o projeto:
    ```sh
    npm run dev
    ```
-5. Acesse no navegador
+9. Acesse no navegador
 
 ## 📌 Funcionalidades
 
