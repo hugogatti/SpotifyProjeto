@@ -7,10 +7,9 @@ import { songsArray } from "../assets/database/songs";
 
 const Artist = () => {
   const { id } = useParams();
-  // console.log(useParams());
 
   const { name, banner } = artistArray.filter(
-    (currentArtistObj) => currentArtistObj.id === Number(id)
+    (currentArtistObj) => currentArtistObj._id === Number(id)
   )[0];
 
   const songsArrayFromArtist = songsArray.filter(
@@ -20,13 +19,7 @@ const Artist = () => {
   const randomIndex = Math.floor(
     Math.random() * (songsArrayFromArtist.length - 1)
   );
-  const randomIdFromArtist = songsArrayFromArtist[randomIndex].id;
-
-  // console.log(randomIdFromArtist);
-  // console.log(Math.floor(Math.random() * (songsArrayFromArtist.length - 1)));
-  // console.log("Tamanho do Array:" + songsArrayFromArtist.length);
-
-  // console.log(songsArrayFromArtist);
+  const randomIdFromArtist = songsArrayFromArtist[randomIndex]._id;
 
   return (
     <div className="artist">
