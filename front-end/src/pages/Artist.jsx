@@ -9,7 +9,7 @@ const Artist = () => {
   const { id } = useParams();
 
   const { name, banner } = artistArray.filter(
-    (currentArtistObj) => currentArtistObj._id === Number(id)
+    (currentArtistObj) => currentArtistObj._id === id
   )[0];
 
   const songsArrayFromArtist = songsArray.filter(
