@@ -14,20 +14,21 @@ Este projeto é uma recriação do Spotify utilizando tecnologias modernas para 
 
 ```
 📁 SpotifyProjeto
- ├── 📂 back-end
- │   ├── 📂 api               # Servidor e Conexão
- ├── 📂 front-end
- │   ├── 📂 src
- │   │   ├── 📂 assets        # Databases e imagens
- │   │   ├── 📂 components    # Componentes reutilizáveis
- │   │   ├── 📂 pages         # Páginas principais
- │   ├── 📜 App.jsx           # Componente principal
- │   ├── 📜 main.jsx          # Ponto de entrada
- │   ├── 📜 index.css         # Estilização do projeto
- │   ├── 📜 index.html        # Arquivo HTML principal
- │   ├── 📜 package.json      # Dependências do projeto
- │   ├── 📜 vite.config.js    # Configuração do Vite
- ├── 📜 README.md             # Documentação do projeto
+├── 📂 back-end
+│   ├── 📂 api               # Servidor e Conexão
+├── 📂 front-end
+│   ├── 📂 api               # Requisições
+│   ├── 📂 src
+│   │   ├── 📂 assets        # Databases e imagens
+│   │   ├── 📂 components    # Componentes reutilizáveis
+│   │   ├── 📂 pages         # Páginas principais
+│   │   ├── 📜 App.jsx       # Componente principal
+│   │   ├── 📜 main.jsx      # Ponto de entrada
+│   │   ├── 📜 index.css     # Estilização do projeto
+│   ├── 📜 index.html        # Arquivo HTML principal
+│   ├── 📜 package.json      # Dependências do projeto
+│   ├── 📜 vite.config.js    # Configuração do Vite
+├── 📜 README.md             # Documentação do projeto
 ```
 
 ## 🛠️ Como Executar o Projeto
