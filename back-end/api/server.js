@@ -1,9 +1,13 @@
 //API
 import express from "express";
+import cors from "cors";
 import { db } from "./connect.js";
 
 const app = express();
 const PORT = 3001;
+
+//Middleware para permitir que o servidor aceite requisições de qualquer origem
+app.use(cors());
 
 //req = requisição (pedido) do cliente
 //res = resposta do servidor para o cliente

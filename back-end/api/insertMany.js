@@ -4,18 +4,18 @@ import { db } from "./connect.js";
 
 const newArtistArray = artistArray.map((currentArtistObj) => {
   const newArtistObj = { ...currentArtistObj };
-  delete newArtistObj._id;
+  delete newArtistObj.id;
 
   return newArtistObj;
 });
 
 /*
-Remover o _id de cada objeto do array de músicas
+Remover o id de cada objeto do array de músicas
  e criar um novo array com esses objetos
  */
 const newSongsArray = songsArray.map((currentSongObj) => {
   const newSongObj = { ...currentSongObj };
-  delete newSongObj._id;
+  delete newSongObj.id;
 
   return newSongObj;
 });
