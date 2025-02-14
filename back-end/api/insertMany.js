@@ -2,6 +2,10 @@ import { artistArray } from "../../front-end/src/assets/database/artists.js";
 import { songsArray } from "../../front-end/src/assets/database/songs.js";
 import { db } from "./connect.js";
 
+/*
+Remover o id de cada objeto do array de músicas
+ e criar um novo array com esses objetos
+ */
 const newArtistArray = artistArray.map((currentArtistObj) => {
   const newArtistObj = { ...currentArtistObj };
   delete newArtistObj.id;
@@ -9,10 +13,6 @@ const newArtistArray = artistArray.map((currentArtistObj) => {
   return newArtistObj;
 });
 
-/*
-Remover o id de cada objeto do array de músicas
- e criar um novo array com esses objetos
- */
 const newSongsArray = songsArray.map((currentSongObj) => {
   const newSongObj = { ...currentSongObj };
   delete newSongObj.id;
